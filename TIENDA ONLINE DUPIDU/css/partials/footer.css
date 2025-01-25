@@ -1,0 +1,36 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(185, 70, 114);
+    color: white;
+    padding: 0px 0;
+}
+
+footer p {
+    font-size: smaller;
+    font-weight: 100;
+    text-align: center;
+}
+
+footer a {
+    font-size: smaller;
+    color: white;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+footer span {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #ffffff;
+    padding: 10px;
+}
+
+@media (min-width: 1024px) {
+    footer p {
+        justify-content: flex-start;
+        text-align: left;
+        margin-left: 20px;
+    }
+}

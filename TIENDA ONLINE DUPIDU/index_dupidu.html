@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dupidu tu tienda handmade</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="./js/data.js"></script> <!-- Fichero de funcionalidad con los productos -->
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header id="header">
+
+        <div class="logotipo">
+            <img src="./images/logoBlanco.svg" alt="Logotipo dupidu" class="logo_header">
+        </div>
+
+        <div class="navegador">
+            <label for="menu-toggle" class="hamburguesa"><img src="./images/menu24.svg" alt="Menú hamburguesa"></label>
+
+            <input type="checkbox" id="menu-toggle">
+
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <div class="carrito-container">
+                <img src="./images/shopping_cart_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg" alt="Icono carrito"
+                    class="icono-carrito">
+
+                <div class="js_modalCarrito oculto"></div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--Sección para la tienda: -->
+
+    <div class="container-tienda">
+
+        <p>Tienda dupidú</p>
+
+        <!--Sección para los productos: -->
+
+        <section class="js_tienda"></section>
+
+        <div class="js_flechasubir">
+            <a href="#header"><i class="fa-solid fa-circle-up"></i></a>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p><span>dupidú handmade</span><span> · </span>Copyright©2025<span> · </span>Todos los derechos
+                reservados<span> · </span>Cookies</p>
+        </div>
+    </footer>
+
+    <script src="./js/carrito.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

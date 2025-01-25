@@ -1,0 +1,86 @@
+header {
+    background-color: #b94672;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+header .logotipo {
+    width: 150px;
+}
+
+.navegador {
+    display: flex;
+    align-items: center;
+}
+
+.navegador .hamburguesa {
+    width: 50px;
+    cursor: pointer;
+    display: block;
+}
+
+.navegador #menu-toggle {
+    display: none;
+}
+
+.navegador .menu {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #b94672;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+}
+
+#menu-toggle:checked~.menu {
+    display: flex;
+}
+
+.navegador .menu li {
+    padding: 16px;
+}
+
+.navegador .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+@media (min-width: 1024px) {
+    header {
+        justify-content: space-around;
+    }
+
+    .navegador {
+        flex-wrap: nowrap;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .navegador .menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background: transparent;
+    }
+
+    .navegador .hamburguesa {
+        display: none;
+    }
+
+    .navegador ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,101 @@
+.carrito-container {
+    position: relative;
+    display: flex;
+    align-content: center;
+}
+
+.carrito-container .icono-carrito{
+    width: 40px;
+    cursor: pointer;
+    display: block;
+}
+
+.js_modalCarrito {
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    width: 450px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.visible {
+    display: block;
+}
+
+.oculto {
+    display: none;
+}
+
+.carrito-container h3 {
+    text-align: center;
+    color: #505050;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.carrito-container p {
+    text-align: justify;
+    color: #505050;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.productos-carrito {
+    list-style: none;
+    padding: 0;
+}
+
+.item-carrito {
+    background-color: rgb(232, 232, 232);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contenedor-botones {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.btn-carrito {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.item-carrito button {
+    background-color: #b94672;
+    color: #ffffff;
+    font-size: 1.1rem;
+    border-radius: 16px;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+ 
+.contenedor-botones button {
+    background-color: #b94672;
+    color: #ffffff;
+    font-size: 1.1rem;
+    border-radius: 16px;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+}
